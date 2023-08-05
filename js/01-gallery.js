@@ -27,6 +27,10 @@ function openImgClick(evt) {
 
     const mainImg = evt.target.dataset.source;
     const instance = basicLightbox.create(`<img src="${mainImg}">`);
-instance.show()
+    instance.show()
+    ulContainer.addEventListener("keydown", (evt) => {
+    if (evt.code === "Escape") {
+        instance.close();
+    }
+})
 }
-

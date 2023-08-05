@@ -23,8 +23,9 @@ function openImgClick(evt) {
     if (evt.target === evt.currentTarget) {
         return
     }
-    const lightbox = new SimpleLightbox('.gallery a', { 
+}
+
+const lightbox = new SimpleLightbox('.gallery a', { 
         captionsData: "alt",
         captionsDelay: 250,
      });
-}
