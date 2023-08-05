@@ -24,9 +24,8 @@ function openImgClick(evt) {
     if (evt.target === evt.currentTarget) {
         return
     }
-    console.log(evt.target);
+
     const mainImg = evt.target.dataset.source;
-    // console.log(mainImg)
     const instance = basicLightbox.create(`<img src="${mainImg}">`);
 instance.show()
 }
